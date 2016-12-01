@@ -15,10 +15,7 @@ public class FirstClass extends BaseClass {
         driver.navigate().to("http://localhost/litecart/admin");
         driver.findElement(By.name("username")).sendKeys("admin");
         driver.findElement(By.name("password")).sendKeys("admin");
-
-//        driver.findElement(By.cssSelector("(\"input#text.input__control.input__input\")")).sendKeys("selenium");
-//        driver.findElement(By.cssSelector("button.button.suggest2-form__button")).click();
-//        assert driver.getTitle().contains("selenium");
+        driver.findElement(By.name("login")).click();
     }
 
 }
